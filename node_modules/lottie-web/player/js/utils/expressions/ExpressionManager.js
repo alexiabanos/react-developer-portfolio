@@ -22,19 +22,24 @@ const ExpressionManager = (function () {
   var XMLHttpRequest = null;
   var fetch = null;
   var frames = null;
+  var _lottieGlobal = {};
   seedrandom(BMMath);
+
+  function resetFrame() {
+    _lottieGlobal = {};
+  }
 
   function $bm_isInstanceOfArray(arr) {
     return arr.constructor === Array || arr.constructor === Float32Array;
   }
 
   function isNumerable(tOfV, v) {
-    return tOfV === 'number' || tOfV === 'boolean' || tOfV === 'string' || v instanceof Number;
+    return tOfV === 'number' || v instanceof Number || tOfV === 'boolean' || tOfV === 'string';
   }
 
   function $bm_neg(a) {
     var tOfA = typeof a;
-    if (tOfA === 'number' || tOfA === 'boolean' || a instanceof Number) {
+    if (tOfA === 'number' || a instanceof Number || tOfA === 'boolean') {
       return -a;
     }
     if ($bm_isInstanceOfArray(a)) {
@@ -59,10 +64,7 @@ const ExpressionManager = (function () {
   function sum(a, b) {
     var tOfA = typeof a;
     var tOfB = typeof b;
-    if (tOfA === 'string' || tOfB === 'string') {
-      return a + b;
-    }
-    if (isNumerable(tOfA, a) && isNumerable(tOfB, b)) {
+    if ((isNumerable(tOfA, a) && isNumerable(tOfB, b)) || tOfA === 'string' || tOfB === 'string') {
       return a + b;
     }
     if ($bm_isInstanceOfArray(a) && isNumerable(tOfB, b)) {
@@ -741,7 +743,8 @@ const ExpressionManager = (function () {
   }
 
   ob.initiateExpression = initiateExpression;
-  ob.__preventDeadCodeRemoval = [window, document, XMLHttpRequest, fetch, frames, $bm_neg, add, $bm_sum, $bm_sub, $bm_mul, $bm_div, $bm_mod, clamp, radians_to_degrees, degreesToRadians, degrees_to_radians, normalize, rgbToHsl, hslToRgb, linear, random, createPath];
+  ob.__preventDeadCodeRemoval = [window, document, XMLHttpRequest, fetch, frames, $bm_neg, add, $bm_sum, $bm_sub, $bm_mul, $bm_div, $bm_mod, clamp, radians_to_degrees, degreesToRadians, degrees_to_radians, normalize, rgbToHsl, hslToRgb, linear, random, createPath, _lottieGlobal];
+  ob.resetFrame = resetFrame;
   return ob;
 }());
 

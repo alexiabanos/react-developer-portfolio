@@ -1,3 +1,45 @@
+## V 5.12.1
+- FIX: Transform Effect opacity reset
+- FEATURE: esm support
+- FIX: Fix transform matrix precalc when adding effects
+- IMPROVEMENT: canvas renderer signifcantly improved in performance
+- IMPROVEMENT: improved text support for emojis
+- IMPROVEMENT: text renderer performance improvement when rendering out of the work area
+- FIX: canvas expressions render order
+
+## V 5.12.0
+- FEATURE: Transform Effect support
+- FIX: play / pause behavior on worker
+- IMPROVEMENT: move text rendering to render phase
+- FEATURE: expose global object _lottieGlobal for expressions
+
+## V 5.11.0
+- FEATURE: Essential Graphics support
+- FEATURE: slots support
+- FIX: update data when updateDocumentData is called
+- FIX: using unregistered renderer or missing path
+- FIX: added destroy null check
+- FEATURE: Implement setLoop in Web Worker
+
+## V 5.10.2
+- FEATURE: add setLoop method
+- FEATURE: support for all matte masks in canvas
+- FEATURE: support for alpha matte in canvas worker
+- FEATURE: support for canvas renderer in Safari
+- FEATURE: add DOM loaded event for canvas worker
+- FIX: tint effect opacity
+
+## V 5.10.1
+- FIX: track matte masks transform fix
+
+## V 5.10.0
+- FIX: light versions referencing expressions interfaces
+- FEATURE: Add support for new track masks by layer index
+- FEATURE: Add support for zigzag (thanks @mbasaglia)
+- FEATURE: Add support for offset path (thanks @mbasaglia)
+- FEATURE: Customizable canvas renderer width and height
+- FIX: Workaround for banner validation
+
 ## V 5.9.6
 - FIX: Bodymovin export missing comps
 - FIX: Disambiguate bevelEmboss properties (thanks @mbasaglia)

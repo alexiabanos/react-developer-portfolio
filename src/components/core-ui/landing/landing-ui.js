@@ -25,7 +25,7 @@ function LandingUI({ theme, drawerOpen, classes }) {
                             <a
                                 href={contactsData.linkedIn}
                                 target='_blank'
-                                rel='noreferrer'
+                                rel='noopener noreferrer'
                             >
                                 <FaLinkedin
                                     className='landing--social linkedin-icon'
@@ -38,7 +38,7 @@ function LandingUI({ theme, drawerOpen, classes }) {
                             <a
                                 href={contactsData.github}
                                 target='_blank'
-                                rel='noreferrer'
+                                rel='noopener noreferrer'
                             >
                                 <FaGithub
                                     className='landing--social'
@@ -87,7 +87,7 @@ function LandingUI({ theme, drawerOpen, classes }) {
                                     href={headerData.resumePdf}
                                     download='resume'
                                     target='_blank'
-                                    rel='noreferrer'
+                                    rel='noopener noreferrer'
                                 >
                                     <button className={classes.resumeBtn}>
                                         Resume

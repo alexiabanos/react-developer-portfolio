@@ -2,8 +2,7 @@ import { IconButton, Snackbar, SnackbarContent } from '@mui/material';
 import React, { useContext } from 'react';
 import { AiOutlineCheckCircle, AiOutlineSend } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn, FaMediumM } from 'react-icons/fa';
-import { FiAtSign, FiPhone } from 'react-icons/fi';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { FiAtSign } from 'react-icons/fi';
 import { IoClose } from 'react-icons/io5';
 import { ThemeContext } from '../../../contexts/theme-context';
 import { contactsData } from '../../../data/contactsData';
@@ -152,7 +151,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                 <a
                   href={contactsData.github}
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                   className={classes.socialIcon}
                 >
                   <FaGithub aria-label='GitHub' />
@@ -162,7 +161,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                 <a
                   href={contactsData.linkedIn}
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                   className={classes.socialIcon}
                 >
                   <FaLinkedinIn aria-label='LinkedIn' />
@@ -173,7 +172,7 @@ const ContactUI = ({ open, success, errMsg, handleClose, classes, handleContactF
                 <a
                   href={contactsData.medium}
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                   className={classes.socialIcon}
                 >
                   <FaMediumM aria-label='Medium' />

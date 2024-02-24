@@ -26,7 +26,7 @@ function SingleProjectUI({ id, name, desc, tags, code, demo, image, theme, class
                         <a
                             href={demo}
                             target='_blank'
-                            rel='noreferrer'
+                            rel='noopener noreferrer'
                             className={classes.iconBtn}
                             aria-labelledby={`${name
                                 .replace(' ', '-')
@@ -45,7 +45,7 @@ function SingleProjectUI({ id, name, desc, tags, code, demo, image, theme, class
                         <a
                             href={code}
                             target='_blank'
-                            rel='noreferrer'
+                            rel='noopener noreferrer'
                             className={classes.iconBtn}
                             aria-labelledby={`${name
                                 .replace(' ', '-')
