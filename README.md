@@ -4,7 +4,7 @@
 Welcome to my personal portfolio built with React. This project showcases my work and projects in a clean, responsive layout. It's designed to highlight my skills, experience, and interests in web development.
 
 ## Live Demo
-Visit my live developer portfolio: [Alexia Banos Perez - Portfolio](https://alexiabanos.netlify.app/)
+Visit my live developer portfolio: [Alexia Banos Perez - Portfolio](https://alexiabanos.pages.dev/)
 
 ![](https://github.com/alexiabanos/react-developer-portfolio/blob/master/src/assets/gif/demo.gif)
 
