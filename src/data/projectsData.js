@@ -2,6 +2,10 @@ import project3 from '../assets/svg/projects/project3.png'
 import project2 from '../assets/svg/projects/four.svg'
 import project1 from '../assets/svg/projects/project1.png'
 import { MdOutlineExposurePlus2 } from 'react-icons/md'
+import project3 from '../assets/svg/projects/project3.png'
+import project2 from '../assets/svg/projects/four.svg'
+import project1 from '../assets/svg/projects/project1.png'
+import { MdOutlineExposurePlus2 } from 'react-icons/md'
 
 
 export const projectsData = [
