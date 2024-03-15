@@ -79,7 +79,8 @@ function LandingUI({ theme, drawerOpen, classes }) {
                             style={{ color: theme.primary, fontSize: '20px' }}
                             loop
                         />
-                        <p>{headerData.desciption}</p>
+                        <p>{headerData.description1}</p>
+                        <p>{headerData.description2}</p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (

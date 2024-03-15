@@ -25,9 +25,8 @@ function Education() {
                                 id={edu.id}
                                 institution={edu.institution}
                                 course={edu.course}
-                                minor={edu.minor}
                                 startYear={edu.startYear}
-                                /*endYear={edu.endYear}*/
+                                endYear={edu.endYear}
                             />
                         ))}
                     </div>

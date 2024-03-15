@@ -1,34 +1,35 @@
-import eight from '../assets/svg/projects/eight.svg'
-import seven from '../assets/svg/projects/seven.svg'
-import six from '../assets/svg/projects/six.svg'
+import project3 from '../assets/svg/projects/project3.png'
+import project2 from '../assets/svg/projects/four.svg'
+import project1 from '../assets/svg/projects/project1.png'
+import { MdOutlineExposurePlus2 } from 'react-icons/md'
 
 
 export const projectsData = [
     {
         id: 1,
-        projectName: '',
-        projectDesc: '',
-        tags: ['React', 'SAAS', 'React Bootstrap'],
-        code: '',
-        demo: '',
-        image: six
+        projectName: 'Client Website',
+        projectDesc: 'Hair By Minh',
+        tags: ['HTML', 'CSS', 'JavaScript'],
+        code: 'https://github.com/alexiabanos/hair-salon-site',
+        demo: 'https://kaizenhair.com/',
+        image: project1
     },
     {
         id: 2,
-        projectName: '',
-        projectDesc: '',
-        tags: ['React', 'Express', 'Material Ui'],
-        code: '',
-        demo: '',
-        image: seven
+        projectName: 'Reservation API',
+        projectDesc: 'Amenity Booking',
+        tags: ['Java', 'SpringBoot', 'Bootstrap'],
+        code: 'https://github.com/alexiabanos/amenity-reservation-system',
+        demo: 'https://github.com/alexiabanos/amenity-reservation-system',
+        image: project2
     },
     {
         id: 3,
-        projectName: '',
-        projectDesc: '',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: '',
-        demo: '',
-        image: eight
+        projectName: 'eCommerce Shop',
+        projectDesc: 'Clothing Boutique',
+        tags: ['React', 'Context API', 'TypeScript'],
+        code: 'https://github.com/alexiabanos/ecommerce-shop',
+        demo: 'https://clothingboutique.pages.dev/',
+        image: project3
     }
 ]
